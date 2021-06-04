@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#D1C4E9" />
+  <meta name="msapplication-navbutton-color" content="#D1C4E9">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#D1C4E9">
+  <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
+  <title>Navbar</title>
+</head>
+<body>
+  <nav>
+        <span id="brand">
+              <a href="#">NAVBAR</a>
+        </span>
+
+        <ul id="menu">
+              <li><a href="#">ONE</a></li>
+              <li><a href="#">TWO</a></li>
+              <li><a href="#">THREE</a></li>
+              <li><a href="#">FOUR</a></li>
+              <li><a href="#">FIVE</a></li>
+
+        </ul>
+
+        <div id="toggle">
+              <div class="span" id="one"></div>
+              <div class="span" id="two"></div>
+              <div class="span" id="three"></div>
+        </div>
+  </nav>
+
+  <div id="resize">
+        <ul id="menu">
+          <li><a href="#">ONE</a></li>
+          <li><a href="#">TWO</a></li>
+          <li><a href="#">THREE</a></li>
+          <li><a href="#">FOUR</a></li>
+          <li><a href="#">FIVE</a></li>
+        </ul>
+  </div>
+
+  <script>
+  $("#toggle").click(function() {
+  $(this).toggleClass('on');
+  $("#resize").toggleClass("active");
+  });
+  </script>
+</body>
+</html>
